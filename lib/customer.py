@@ -18,15 +18,3 @@ class Customer:
     @classmethod
     def all(cls):
         return cls.all_customers
-
-
-# Tests
-customer1 = Customer('Patrick', 'Ngatia')
-customer2 = Customer('Purity', 'Ngatia')
-
-# print(customer1.full_name())
-# print(customer2.full_name())
-
-all_customers = Customer.all()
-for Customer in all_customers:
-    print(Customer.full_name())
