@@ -3,10 +3,18 @@ class Review:
     _all_reviews = []
 
     def __init__(self, customer, restaurant, rating):
-        self.customer = customer
-        self.restaurant = restaurant
+        self._customer = customer
+        self._restaurant = restaurant
         self._rating = rating
         Review._all_reviews.append(self)
+
+    @property
+    def customer(self):
+        return self._customer
+
+    @property
+    def restaurant(self):
+        return self._restaurant
 
     def get_rating(self):
         return self._rating
