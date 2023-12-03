@@ -12,8 +12,8 @@ for Customer in all_customers:
 restaurant = Restaurant('Angani')
 
 review = Review(customer1, restaurant, 5)
-review = Review(customer2, restaurant, 3)
+review1 = Review(customer2, restaurant, 3)
 
 all_reviews = Review.all()
 for review in all_reviews:
-    print(f'Rating: {review.rating()} by {review.customer.full_name()} for {review.restaurant.name()}')
+    print(f"Rating: {review.get_rating()} by {review.customer.full_name()} for {review.restaurant._name}")
